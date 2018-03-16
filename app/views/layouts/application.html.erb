@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Relationships</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav><%=  link_to 'Users', users_path(@user) %> </nav>
+    <nav><%=  link_to 'Orders', orders_path(@order)%></nav>
+    <%= yield %>
+  </body>
+</html>
